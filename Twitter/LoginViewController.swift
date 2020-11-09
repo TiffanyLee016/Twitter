@@ -20,8 +20,8 @@ class LoginViewController: UIViewController {
         self.performSegue(withIdentifier: "loginHome", sender: self)
     }
     }
-   
-
+    
+    
     @IBAction func onLoginButton(_ sender: Any) {
         let myURL = "https://api.twitter.com/oauth/request_token"
         TwitterAPICaller.client?.login(url: myURL, success: {
@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
             print ("Could not login in!")
         })
     }
-    
+  
     /*
     // MARK: - Navigation
 
